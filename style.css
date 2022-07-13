@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+/* Глобальные стили */
+body {
+  margin: 0;
+  padding: 59px 75px;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Стили Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list__item {
+  padding-right: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0c1837;
+}
+
+.header-list__item:nth-child(1) {
+  font-weight: 700;
+}
+
+.arrow {
+  width: 3px;
+  height: 3px;
+  border-top: 2px solid #0c1837;
+  border-right: 2px solid #0c1837;
+  display: inline-block;
+  transform: rotate(135deg);
+}
+
+.arrow-course {
+    position: absolute;
+    top: 8px;
+    left: 53px;
+}
+
+.arrow-base {
+    position: absolute;
+    top: 8px;
+    left: 98px;
+}
+
+/* Стили Main */
+
+main {
+    background-image: url(img/bg-image-main.svg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-left__info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 137px;
+}
+
+.main-title {
+  width: 516px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.main-description {
+  width: 433px;
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 56px;
+}
+
+.main-button__subscribe {
+  height: 55px;
+  width: 244px;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 19px;
+  border-radius: 55px;
+  background-color: #FF614B;
+  border: none;
+  color: #FFFFFF;
+}
+
+.main-right__info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 715px;
+  width: 517px;
+  background-image: url(img/photo.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main-frame {
+  background-color: #FFFFFF;
+  border-radius: 70px;
+  width: 70%;
+  margin-bottom: 48px;
+}
+
+.main-frame__name {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #FF614B;
+  padding-top: 20px;
+}
+
+.main-frame__speciality {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0C1837;
+  padding-bottom: 20px;
+}
+
+/* Адаптация под мобильные устройства */
+
+@media (max-width: 1200px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+  }
+
+  header { 
+    flex-direction: column;
+  }
+
+  .header-list {
+    flex-direction: column;
+  }
+
+  main {
+    background-image: url(img/bg-image-main.svg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-title {
+    width: 414px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 55px;
+  }
+
+  .main-description {
+    width: 300px;
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  .main-right__info {
+    align-items: center;
+  }
+}
